@@ -14,5 +14,5 @@ do
     else
         n=$i  
     fi
-    bq query --use_legacy_sql=false --replace --destination_table examples.gbpusd_201401p\$201401$n SELECT \* from examples.gbpusd_201401 WHERE EXTRACT\(DAY from DATE\(time\)\)=$i ORDER BY time;
+    bq query --use_legacy_sql=false --replace --destination_table "examples.gbpusd_201401p$201401"$n "SELECT * from examples.gbpusd_201401 WHERE EXTRACT(DAY from DATE(time))"=$i ORDER BY time;
 done
