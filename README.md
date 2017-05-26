@@ -1,4 +1,4 @@
-## Cloud Academy's Optimizing BigQuery Performance, Cost, and Security Course
+## Optimizing BigQuery Performance, Cost, and Security
 This file contains text you can copy and paste for the examples in Cloud Academy's _Optimizing BigQuery Performance, Cost, and Security_ course.
 
 ### Reducing the Amount of Data Processed
