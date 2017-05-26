@@ -1,7 +1,9 @@
 #!/bin/bash
 #
+# Partitioned table example from Cloud Academy's Optimizing BigQuery Performance, Cost, and Security course
+#
 # Extracts data from examples.gbpusd_201401 and loads it into the appropriate daily
-# partitions in a new partitioned table called examples.gbpusd_201401p.
+# partitions in a new partitioned table called examples.gbpusd_201401p
 #
 
 bq mk --time_partitioning_type=DAY examples.gbpusd_201401p
