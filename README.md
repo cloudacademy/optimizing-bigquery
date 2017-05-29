@@ -64,8 +64,29 @@ ON
   artist_credit_name.artist_credit = recording.artist_credit
 ```
 
-#### Nested Repeated Fields
-
+### Nested Repeated Fields
+#### Example data
 | Table         | Data                          | Schema                                                 |
 | ------------------ | ----------------------------- | ------------------------------------------------------ |
 | persons_data       | https://cloud.google.com/bigquery/docs/personsData.json | https://cloud.google.com/bigquery/docs/personsDataSchema.json |
+
+#### Query a nested field
+```
+SELECT fullName, phoneNumber.number
+FROM `cloud-academy-content-team.examples.persons_data`
+```
+
+#### Unnest a field
+```
+SELECT fullName, place
+FROM `cloud-academy-content-team.examples.persons_data`,
+UNNEST(citiesLived)
+WHERE place = "Austin"
+```
+
+#### Query a view
+```
+SELECT fullName, place
+FROM `cloud-academy-content-team.examples.cities_by_person`
+WHERE place = 'Stockholm'
+```
