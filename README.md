@@ -38,11 +38,11 @@ WHERE
 ORDER BY time ASC
 ```
 
-### Denormalized data structures
+### Denormalized Data Structures
 #### MusicBrainz data files
 
-| Table Name         | Schema                                                 | Data                          |
-| ------------------ | ------------------------------------------------------ | ----------------------------- |
-| artist             | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_schema.json | gs://solutions-public-assets/bqetl/artist.json
-| artist_credit_name | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_credit_name_schema.json| gs://solutions-public-assets/bqetl/artist_credit_name.json |
-recording            | https://storage.googleapis.com/solutions-public-assets/bqetl/recording_schema.json | gs://solutions-public-assets/bqetl/recording.json |
+| Table         | Data                          | Schema                                                 |
+| ------------------ | ----------------------------- | ------------------------------------------------------ |
+| artist             | gs://solutions-public-assets/bqetl/artist.json | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_schema.json |
+| artist_credit_name | gs://solutions-public-assets/bqetl/artist_credit_name.json | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_credit_name_schema.json|
+| recording            | gs://solutions-public-assets/bqetl/recording.json | https://storage.googleapis.com/solutions-public-assets/bqetl/recording_schema.json |
