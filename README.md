@@ -27,3 +27,13 @@ ORDER BY time ASC
 SELECT MIN(time) AS mintime, MAX(time) AS maxtime
 FROM `examples.gbpusd_20140*`
 ```
+
+#### _PARTITIONTIME
+```
+SELECT time, bid, ask
+FROM examples.gbpusd_201401p
+WHERE
+  _PARTITIONTIME BETWEEN TIMESTAMP('2014-01-09')
+  AND TIMESTAMP('2014-01-10')
+ORDER BY time ASC
+```
