@@ -46,3 +46,26 @@ ORDER BY time ASC
 | artist             | gs://solutions-public-assets/bqetl/artist.json | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_schema.json |
 | artist_credit_name | gs://solutions-public-assets/bqetl/artist_credit_name.json | https://storage.googleapis.com/solutions-public-assets/bqetl/artist_credit_name_schema.json|
 | recording            | gs://solutions-public-assets/bqetl/recording.json | https://storage.googleapis.com/solutions-public-assets/bqetl/recording_schema.json |
+
+#### Create denormalized table
+```
+SELECT
+  artist.id, artist.gid AS artist_gid, artist.name AS artist_name, artist.area,
+  recording.name AS recording_name, recording.length, recording.gid, recording.video
+FROM
+  `examples.artist` AS artist
+INNER JOIN
+  `examples.artist_credit_name` AS artist_credit_name
+ON
+  artist.id = artist_credit_name.artist
+INNER JOIN
+  `examples.recording` AS recording
+ON
+  artist_credit_name.artist_credit = recording.artist_credit
+```
+
+#### Nested Repeated Fields
+
+| Table         | Data                          | Schema                                                 |
+| ------------------ | ----------------------------- | ------------------------------------------------------ |
+| persons_data       | https://cloud.google.com/bigquery/docs/personsData.json | https://cloud.google.com/bigquery/docs/personsDataSchema.json |
