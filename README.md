@@ -68,4 +68,4 @@ ON
 
 | Table         | Data                          | Schema                                                 |
 | ------------------ | ----------------------------- | ------------------------------------------------------ |
-| persons_data       | https://cloud.google.com/bigquery/docs/personsData.json | https://cloud.google.com/bigquery/docs/personsDataSchema.json |
+| persons_data       | <a href='https://cloud.google.com/bigquery/docs/personsData.json' download>https://cloud.google.com/bigquery/docs/personsData.json</a> | https://cloud.google.com/bigquery/docs/personsDataSchema.json |
