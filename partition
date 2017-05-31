@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Partitioned table example from Cloud Academy's Optimizing BigQuery Performance, Cost, and Security course
+# Partitioned table example from Cloud Academy's Optimizing Google BigQuery course
 #
 # Extracts data from examples.gbpusd_201401 and loads it into the appropriate daily
 # partitions in a new partitioned table called examples.gbpusd_201401p
