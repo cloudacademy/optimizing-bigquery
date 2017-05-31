@@ -64,6 +64,13 @@ ON
   artist_credit_name.artist_credit = recording.artist_credit
 ```
 
+#### Query denormalized table
+```
+SELECT artist_name, recording_name
+FROM `cloud-academy-content-team.examples.recording_by_artist`
+WHERE artist_name LIKE '%Elvis%'
+```
+
 ### Nested Repeated Fields
 #### Example data
 | Table         | Data                          | Schema                                                 |
