@@ -1,5 +1,5 @@
-## Optimizing BigQuery Performance, Cost, and Security
-This file contains text you can copy and paste for the examples in Cloud Academy's _Optimizing BigQuery Performance, Cost, and Security_ course.
+## Optimizing Google BigQuery
+This file contains text you can copy and paste for the examples in Cloud Academy's _Optimizing Google BigQuery_ course.
 
 ### Reducing the Amount of Data Processed
 #### Stock exchange data files
