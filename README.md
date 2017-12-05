@@ -75,7 +75,7 @@ WHERE artist_name LIKE '%Elvis%'
 #### Example data
 | Table         | Data                          | Schema                                                 |
 | ------------------ | ----------------------------- | ------------------------------------------------------ |
-| persons_data       | https://cloud.google.com/bigquery/docs/personsData.json | https://cloud.google.com/bigquery/docs/personsDataSchema.json |
+| persons_data       | https://raw.githubusercontent.com/cloudacademy/optimizing-bigquery/master/personsData.json | https://raw.githubusercontent.com/cloudacademy/optimizing-bigquery/master/personsDataSchema.json |
 
 #### Query a nested field
 ```
