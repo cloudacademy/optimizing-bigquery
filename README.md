@@ -28,14 +28,10 @@ SELECT MIN(time) AS mintime, MAX(time) AS maxtime
 FROM `examples.gbpusd_20140*`
 ```
 
-#### _PARTITIONTIME
+### Partitioned Tables
+#### Create partitioned table
 ```
-SELECT time, bid, ask
-FROM examples.gbpusd_201401p
-WHERE
-  _PARTITIONTIME BETWEEN TIMESTAMP('2014-01-09')
-  AND TIMESTAMP('2014-01-10')
-ORDER BY time ASC
+bq query --use_legacy_sql=false --replace --destination_table 'examples.gbpusd_201401p' --time_partitioning_field time "SELECT * from examples.gbpusd_201401"
 ```
 
 ### Denormalized Data Structures
