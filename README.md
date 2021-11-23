@@ -32,7 +32,7 @@ bq query --use_legacy_sql=false --replace --destination_table 'examples.gbpusd_2
 
 ### Denormalized Data Structures
 #### MusicBrainz data files
-**Note: The files below are no longer available. We are working on uploading smaller versions of them to this repository.**
+__***Note: The files below are no longer available. We are working on uploading smaller versions of them to this repository.__
 
 | Table         | Data                          | Schema                                                 |
 | ------------------ | ----------------------------- | ------------------------------------------------------ |
