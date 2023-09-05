@@ -90,10 +90,3 @@ SELECT fullName, place
 FROM `cloud-academy-content-team.examples.cities_by_person`
 WHERE place = 'Stockholm'
 ```
-
-### Security
-#### Query for authorized view
-```
-SELECT fullName, age, gender
-FROM `cloud-academy-content-team.examples.persons_data`
-```
